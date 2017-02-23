@@ -606,7 +606,7 @@
 // For example an inductive probe, or a setup that uses the nozzle to probe.
 // An inductive probe must be deactivated to go below
 // its trigger-point if hardware endstops are active.
-//#define FIX_MOUNTED_PROBE  // Uncomment for probe (ML)
+#define FIX_MOUNTED_PROBE  // Uncomment for probe (ML)
 
 // The BLTouch probe emulates a servo probe.
 // The default connector is SERVO 0. Set Z_ENDSTOP_SERVO_NR below to override.
@@ -893,7 +893,7 @@
  */
 //#define AUTO_BED_LEVELING_3POINT
 //#define AUTO_BED_LEVELING_LINEAR
-//#define AUTO_BED_LEVELING_BILINEAR  // Uncomment for probe (ML)
+#define AUTO_BED_LEVELING_BILINEAR  // Uncomment for probe (ML)
 
 /**
  * Enable detailed logging of G28, G29, M48, etc.
@@ -970,7 +970,7 @@
 // For DELTA this is the top-center of the Cartesian print volume.
 //#define MANUAL_X_HOME_POS 0
 //#define MANUAL_Y_HOME_POS 0
-#define MANUAL_Z_HOME_POS 300 // Distance between the nozzle to printbed after homing
+#define MANUAL_Z_HOME_POS 290.4// Distance between the nozzle to printbed after homing
 
 // Use "Z Safe Homing" to avoid homing with a Z probe outside the bed area.
 //
