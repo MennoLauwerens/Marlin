@@ -449,7 +449,7 @@
   #define DELTA_DIAGONAL_ROD 218.0 //220.3 //212.0 // mm measure 21.75
 
   // Horizontal offset from middle of printer to smooth rod center.
-  #define DELTA_SMOOTH_ROD_OFFSET 150.0 // mm
+  #define DELTA_SMOOTH_ROD_OFFSET 155.0 // mm // ***ML
 
   // Horizontal offset of the universal joints on the end effector.
   #define DELTA_EFFECTOR_OFFSET 24.0 // mm
@@ -517,7 +517,7 @@
 #define X_MAX_ENDSTOP_INVERTING false  // set to true to invert the logic of the endstop.
 #define Y_MAX_ENDSTOP_INVERTING false  // set to true to invert the logic of the endstop.
 #define Z_MAX_ENDSTOP_INVERTING false  // set to true to invert the logic of the endstop.
-#define Z_MIN_PROBE_ENDSTOP_INVERTING false  // set to true to invert the logic of the endstop.
+#define Z_MIN_PROBE_ENDSTOP_INVERTING true  // set to true to invert the logic of the endstop.
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
 // This will remove the need to poll the interrupt pins, saving many CPU cycles.
@@ -545,8 +545,9 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 100, 160 }  // default steps per unit for Kossel (GT2, 20 tooth)
 
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 100, 94 }
+/*#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 100, 160 }  // default steps per unit for Kossel (GT2, 20 tooth)*/
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
@@ -795,7 +796,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -970,7 +971,7 @@
 // For DELTA this is the top-center of the Cartesian print volume.
 //#define MANUAL_X_HOME_POS 0
 //#define MANUAL_Y_HOME_POS 0
-#define MANUAL_Z_HOME_POS 287.5 //290.4// Distance between the nozzle to printbed after homing
+#define MANUAL_Z_HOME_POS 313.7 //old287.5 //290.4// Distance between the nozzle to printbed after homing
 
 // Use "Z Safe Homing" to avoid homing with a Z probe outside the bed area.
 //
